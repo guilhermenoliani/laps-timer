@@ -25,7 +25,7 @@ const handleLap = () => {
   <div class="item_img_arrow-right" >
     <img  src="./images/icons-laps/corner-down-right.svg" alt="" />
   </div>
-  <div class="text_content_laps">Lap <span class='number'></span> -- ${valLap}</div>
+  <div class="text_content_laps">Laps <span class='number'></span> -- ${valLap}</div>
     <div class="item_img_cross">
       <img onclick="clearLaps()" src="./images/icons-laps/corner-up-left.svg" alt="" />
     </div>
