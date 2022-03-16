@@ -1,10 +1,13 @@
 body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
   background-color: #ccc;
 }
 #timerContainer {
   font-family: Arial, Helvetica, sans-serif;
   margin: auto;
-  width: 500px;
+  max-width: 500px;
   height: 100px;
   border-radius: 50px;
   background-color: #00a97f;
@@ -71,22 +74,37 @@ body {
   margin: auto;
   margin-top: 20px;
   padding-top: 10px;
-  width: 600px;
-  height: 200px;
+  max-width: 600px;
+  min-height: 100px;
   border-radius: 10px;
   background-color: #00a97f;
 }
-#todoContainer h1 {
+.todo__title h1 {
   text-align: center;
 }
-.todo {
+.todo__new-item {
+  display: flex;
+  justify-content: center;
   margin: auto;
-  width: 500px;
-  height: 40px;
-  border-radius: 50px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  max-width: 510px;
+  min-height: 30px;
+  border-radius: 10px;
+  color: #00a97f;
   background-color: #212121;
 }
-.todoContent {
+.content__todo-item {
   display: flex;
-  color: #ccc;
+  align-items: center;
+  width: 500px;
+  justify-content: space-between;
+}
+.item_img_arrow-right,
+.item_img_cross {
+  height: 24px;
+  width: 24px;
+}
+.item_img_cross img {
+  cursor: pointer;
 }
