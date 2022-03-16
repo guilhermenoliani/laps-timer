@@ -12,7 +12,7 @@ body {
   max-width: 500px;
   height: 100px;
   border-radius: 50px;
-  background-color: #00a97f;
+  background-color: #68e784b9;
 }
 #contentCounter {
   text-align: center;
@@ -21,7 +21,7 @@ body {
   font-size: 50px;
 }
 .btn {
-  --color: #00a97f;
+  --color: #68e784b9;
   --color2: #212121;
   padding: 0.8em 1.7em;
   background-color: transparent;
@@ -80,7 +80,7 @@ body {
   max-width: 600px;
   min-height: 100px;
   border-radius: 10px;
-  background-color: #00a97f;
+  background-color: #68e784b9;
 }
 .todo__title h1 {
   text-align: center;
@@ -94,7 +94,7 @@ body {
   max-width: 510px;
   min-height: 30px;
   border-radius: 10px;
-  color: #00a97f;
+  color: #ccc;
   background-color: #212121;
 }
 .content__todo-item {
@@ -108,17 +108,15 @@ body {
   height: 24px;
   width: 24px;
 }
-.item_img_cross img {
-  cursor: pointer;
-}
+
 ::-webkit-scrollbar {
   width: 5px;
 }
 ::-webkit-scrollbar-track {
-  background: #212121;
+  background: transparent;
   border-radius: 30px;
 }
 ::-webkit-scrollbar-thumb {
-  background: #00a97f;
+  background: #32b84f;
   border-radius: 30px;
 }

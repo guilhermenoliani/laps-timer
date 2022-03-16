@@ -8,7 +8,7 @@ let min = 0;
 const handleStart = () => {
   timer = setInterval(() => {
     watch();
-  }, 100);
+  }, 10);
 };
 
 const handleStop = () => {
@@ -23,11 +23,11 @@ const handleLap = () => {
   item.innerHTML = `
   <div class="content__todo-item">
   <div class="item_img_arrow-right" >
-    <img  src="./images/icons-laps/arrow-right.svg" alt="" />
+    <img  src="./images/icons-laps/corner-down-right.svg" alt="" />
   </div>
-  <div class="text_content_laps">Lap <span class='number'></span>  -- ${valLap}</div>
+  <div class="text_content_laps">Lap <span class='number'></span> -- ${valLap}</div>
     <div class="item_img_cross">
-      <img onclick="clearLaps()" src="./images/icons-laps/x.svg" alt="" />
+      <img onclick="clearLaps()" src="./images/icons-laps/corner-up-left.svg" alt="" />
     </div>
   </div>
   
@@ -35,7 +35,15 @@ const handleLap = () => {
   document.getElementById("todoList").appendChild(item);
 };
 
-const clearLaps = () => {};
+function somar() {
+  var counter = 1;
+  counter++;
+}
+
+const clearLaps = () => {
+  let item = document.querySelector(".todo__new-item");
+  item.remove();
+};
 
 const handleReset = () => {
   document.querySelector(".counter").innerHTML = "00:00:00";
