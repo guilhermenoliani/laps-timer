@@ -17,7 +17,6 @@ const handleStop = () => {
 
 const handleLap = () => {
   let valLap = document.querySelector(".counter").innerText; // Aqui vai pegar o valor que está no cronometro
-  //let textLap = `Lap 1 -- ${valLap}`;
 
   const item = document.createElement("div");
   item.classList.add("todo__new-item");
@@ -26,7 +25,7 @@ const handleLap = () => {
   <div class="item_img_arrow-right" >
     <img  src="./images/icons-laps/arrow-right.svg" alt="" />
   </div>
-  <div class="text_content_laps">${valLap}</div>
+  <div class="text_content_laps">Lap <span class='number'></span>  -- ${valLap}</div>
     <div class="item_img_cross">
       <img onclick="clearLaps()" src="./images/icons-laps/x.svg" alt="" />
     </div>
@@ -36,10 +35,11 @@ const handleLap = () => {
   document.getElementById("todoList").appendChild(item);
 };
 
-const clearLaps = (obj) => {};
+const clearLaps = () => {};
 
 const handleReset = () => {
   document.querySelector(".counter").innerHTML = "00:00:00";
+  document.querySelector("#todoList").innerHTML = "";
   clearInterval(timer);
 };
 

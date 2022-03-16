@@ -2,11 +2,13 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: #ccc;
+  background-color: #212121;
+  height: 100px;
 }
 #timerContainer {
   font-family: Arial, Helvetica, sans-serif;
   margin: auto;
+  margin-top: 10%;
   max-width: 500px;
   height: 100px;
   border-radius: 50px;
@@ -74,6 +76,7 @@ body {
   margin: auto;
   margin-top: 20px;
   padding-top: 10px;
+  padding-bottom: 10px;
   max-width: 600px;
   min-height: 100px;
   border-radius: 10px;
@@ -87,7 +90,7 @@ body {
   justify-content: center;
   margin: auto;
   margin-top: 5px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   max-width: 510px;
   min-height: 30px;
   border-radius: 10px;
@@ -107,4 +110,15 @@ body {
 }
 .item_img_cross img {
   cursor: pointer;
+}
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #212121;
+  border-radius: 30px;
+}
+::-webkit-scrollbar-thumb {
+  background: #00a97f;
+  border-radius: 30px;
 }
